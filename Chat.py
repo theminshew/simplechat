@@ -20,37 +20,38 @@ def menu():
 	menu = raw_input("1.) Yes \n2.) No\n")
 
 	if menu == 1:
-		letsmoveon()
+		moveon()
 
-	if menu == 2:
+	elif menu == 2:
 		recalculate()
+
 	else:
-		# print "That is not an option, Please choose 1 or 2."
+		print "That is not an option, Please choose 1 or 2."
 
 def recalculate():
 	print "Picky, ok let's try again, is %s lbs better?" % fudged_answer
 
-def letsmoveon():
-	print "Excellent, Glad I could find a number that works"
+def moveon():
+		print "Excellent, Glad I could find a number that works"
+		# time.sleep(3)
+
+def menu():
+	menu = raw_input("1.) Yes \n2.) No\n")
 	time.sleep(3)
 
-	def menu():
-		menu = raw_input("1.) Yes \n2.) No\n")
-		time.sleep(3)
+	if menu == 1:
+		abouttime
 
-		if menu == 1:
-			abouttime
+	elif menu == 2:
+		letsmoveonagain()
 
-		if menu == 2:
-			letsmoveon()
-
-		else:
-			print "That is not an option, Please choose 1 or 2."
+	else:
+		print "That is not an option, Please choose 1 or 2."
 
 	def abouttime():
 		print "Geez, about time"
 
-	def letsmoveon():
+	def letsmoveonagain():
 		print "Excellent, Glad I could find a number that works"
 		time.sleep(3)
 
