@@ -30,7 +30,7 @@ def menu():
 		print "That is not an option, Please choose 1 or 2."
 
 def recalculate():
-	print "Picky, ok let's try again, is %s lbs better?" % fudged_answer
+	print "Finally, ok let's try again, is %s lbs better?" % fudged_answer
 
 def menu():
 			menu = raw_input("1.) Yes \n2.) No\n")
