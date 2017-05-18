@@ -20,16 +20,19 @@ def menu():
 	menu = raw_input("1.) Yes \n2.) No\n")
 
 	if menu == 1:
-		print "Excellent, Glad I could find a number that works"
+		Continue()
 
 	elif menu == 2:
 		recalculate()
-
-	else:
 		print "That is not an option, Please choose 1 or 2."
+
+
+def Continue():
+	print "Awesome, Lets move on then."
 
 def recalculate():
 	print "Picky, ok let's try again, is %s lbs better?" % fudged_answer
+
 
 def menu():
 	menu = raw_input("1.) Yes \n2.) No\n")
