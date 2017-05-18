@@ -16,7 +16,6 @@ fudged_answer = int (real_weight) - 25
 # this prompts user with basic menu and gives results
 
 print "ok how does this look? %s is that number better?" % honest_answer
-
 def menu():
 	menu = raw_input("1.) Yes \n2.) No\n")
 
