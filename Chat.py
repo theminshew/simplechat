@@ -16,7 +16,6 @@ fudged_answer = int (real_weight) - 25
 # this prompts user with basic menu and gives results
 
 print "ok how does this look? %s is that number better?" % honest_answer
-
 def menu():
 	menu = raw_input("1.) Yes \n2.) No\n")
 
@@ -30,19 +29,19 @@ def menu():
 		print "That is not an option, Please choose 1 or 2."
 
 def recalculate():
-	print "Finally, ok let's try again, is %s lbs better?" % fudged_answer
+	print "Picky, ok let's try again, is %s lbs better?" % fudged_answer
 
 def menu():
-			menu = raw_input("1.) Yes \n2.) No\n")
+	menu = raw_input("1.) Yes \n2.) No\n")
 
-			if menu == 1:
-				abouttime()
+	if menu == 1:
+		abouttime()
 
-			elif menu == 2:
-				letsmoveonagain()
+	elif menu == 2:
+		letsmoveonagain()
 
-			else:
-				print "That is not an option, Please choose 1 or 2."
+	else:
+		print "That is not an option, Please choose 1 or 2."
 
 def abouttime():
 	print "Geez, about time"
