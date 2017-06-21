@@ -1,5 +1,5 @@
 #initial prompting, basic raw_input to variable mapping
-age = raw_input (" How old are you? ")
+name = raw_input (" What is your name? ")
 weight = raw_input (" How much do you weigh? ")
 real_weight = raw_input (" No really, how much do you really weigh? ")
 print " Hmm, ok lets see what I can do with that?"
@@ -14,46 +14,47 @@ honest_answer = int (real_weight) - 10
 fudged_answer = int (real_weight) - 25
 
 # this prompts user with basic menu and gives results
-print "Ok, I recalculated,
+print "Ok, I recalculated,"
+print "Is %s better?" % (honest_answer)
 
 def menu():
-	print ("Is %s better?") % honest_answer
 	menu = raw_input("1.) Yes \n2.) No\n")
 
 	if menu == 1:
 		moveforward()
 
-	if menu == 2:
+	elif menu == 2:
 		recalculate()
+
+	else:
 		print "That is not an option, Please choose 1 or 2"
 
-def morveforward():
+def moveforward():
 	print "Awesome, Lets move on then."
 
 def recalculate():
-	print "Picky, ok let's try again, is %s lbs better?" % fudged_answer
+	print "Picky, ok let's try again, is %s lbs better?" % (fudged_answer)
+	def menu():
+		menu = raw_input("1.) Yes \n2.) No\n")
 
-def menu():
-	menu = raw_input("1.) Yes \n2.) No\n")
+		if menu == 1:
+				abouttime()
 
-	if menu == 1:
-		abouttime()
+		if menu == 2:
+				letsmoveonagain()
 
-	elif menu == 2:
-		letsmoveonagain()
+		else:
+			print "That is not an option, Please choose 1 or 2."
 
-	else:
-		print "That is not an option, Please choose 1 or 2."
+	def abouttime():
+		print "Geez, about time"
 
-def abouttime():
-	print "Geez, about time"
+	def letsmoveonagain():
+		print "Excellent, Glad I could find a number that works"
+		time.sleep(3)
 
-def letsmoveonagain():
-	print "Excellent, Glad I could find a number that works"
-	time.sleep(3)
-
-print " Alright, so you're %s old and weigh about '%r' " % (
-age, honest_answer)
+print ' Alright %s, so you "weigh" about %r. ' % (
+name, honest_answer)
 
 def menu():
 	print ("are those numbers about right?")
@@ -66,9 +67,8 @@ def menu():
 		bad()
 
 def good():
-	print ("Ok, based on those calculations I think you're a 10 ")
+	print ("Ok, based on those calculations I think you're pretty darned cool.")
 	time.sleep(1)
-	print
 	print "hope this made you smile"
 
 def bad():
