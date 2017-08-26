@@ -5,9 +5,9 @@ real_weight = raw_input (" No really, how much do you really weigh? ")
 print " Hmm, ok lets see what I can do with that?"
 # timing inserts pause for simulated thinking effect
 import time
-time.sleep(3)
+time.sleep(2)
 print "Gimme a moment, I'm still crunching numbers"
-time.sleep(3)
+time.sleep(2)
 
 # variables for adjusting weight for us in function
 honest_answer = int (real_weight) - 10
