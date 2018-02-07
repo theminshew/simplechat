@@ -10,27 +10,27 @@ print "Gimme a moment, I'm still crunching numbers"
 time.sleep(3)
 
 # variables for adjusting weight for us in function
-honest_answer = int (real_weight) - 10
-fudged_answer = int (real_weight) - 25
+fudged_answer = int (real_weight) - 10
+alternate_answer = int (real_weight) - 25
 
-# this prompts user with basic menu and gives results
+# this prompts user with basic menu and gives resultss
 
-print "ok how does this look? %s is that number better?" % honest_answer
+print "ok how does this look? %s is that number better?" % fudged_answer
 
 def menu():
 	menu = raw_input("1.) Yes \n2.) No\n")
 
-	if menu == 1:
+	if raw_input == 1:
 		print "Excellent, Glad I could find a number that works"
 
-	elif menu == 2:
+	elif raw_input == 2:
 		recalculate()
 
 	else:
 		print "That is not an option, Please choose 1 or 2."
 
 def recalculate():
-	print "Finally, ok let's try again, is %s lbs better?" % fudged_answer
+	print "Finally, ok let's try again, is %s lbs better?" % alternate_answer
 
 def menu():
 			menu = raw_input("1.) Yes \n2.) No\n")
@@ -52,7 +52,7 @@ def letsmoveonagain():
 	time.sleep(3)
 
 print " Alright, so you're %s old and weigh about '%r' " % (
-age, honest_answer)
+age, fudged_answer)
 
 def menu():
 	print ("are those numbers about right?")

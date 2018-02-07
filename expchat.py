@@ -18,3 +18,5 @@ print "Is" first_adjustment "better?"
 def print_menu():
     print "1. Menu Option 1"
     print "2. Menu Option 2"
+if menu == 1:
+        
