@@ -16,39 +16,62 @@ fudged_answer = int (real_weight) - 25
 # this prompts user with basic menu and gives results
 
 print "ok how does this look? %s is that number better?" % honest_answer
-def menu():
-	menu = raw_input("1.) Yes \n2.) No\n")
 
-	if menu == 1:
-		print "Excellent, Glad I could find a number that works"
+# def menu():
+# 	menu = raw_input("1.) Yes \n2.) No\n")
+#
+# 	if menu == 1:
+# 		print "Excellent, Glad I could find a number that works"
+#
+# 	elif menu == 2:
+# 		recalculate()
+#
+# 	else:
+# 		print "That is not an option, Please choose 1 or 2."
+#
+# def recalculate():
+# 	print "Finally, ok let's try again, is %s lbs better?" % fudged_answer
+#
+# def menu():
+# 			menu = raw_input("1.) Yes \n2.) No\n")
+#
+# 			if menu == 1:
+# 				abouttime()
+#
+# 			elif menu == 2:
+# 				letsmoveonagain()
+#
+# 			else:
+# 				print "That is not an option, Please choose 1 or 2."
+#
 
-	elif menu == 2:
-		recalculate()
+#
+# def abouttime():
+# 	print "Geez, about time"
+#
+# def letsmoveonagain():
+# 	print "Excellent, Glad I could find a number that works"
+# 	time.sleep(3)
 
-	else:
-		print "That is not an option, Please choose 1 or 2."
 
-def recalculate():
-	print "Picky, ok let's try again, is %s lbs better?" % fudged_answer
+menu = {}
+menu['1']="Yes."
+menu['2']="No."
+while True:
+  options=menu.keys()
+  options.sort()
+for entry in options:
+	print entry, menu[entry]
 
-def menu():
-	menu = raw_input("1.) Yes \n2.) No\n")
+selection=raw_input("Please Select:")
+if selection =='1':
+	print "Perfect, glad that's better."
+elif selection == 'Gee whiz your picky, lets try again.':
+	print "delete"
+    break
+else:
+	print "Please input integer 1 or 2 ."
 
-	if menu == 1:
-		abouttime()
-
-	elif menu == 2:
-		letsmoveonagain()
-
-	else:
-		print "That is not an option, Please choose 1 or 2."
-
-def abouttime():
-	print "Geez, about time"
-
-def letsmoveonagain():
-	print "Excellent, Glad I could find a number that works"
-	time.sleep(3)
 
 print " Alright, so you're %s old and weigh about '%r' " % (
 age, honest_answer)
